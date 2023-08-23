@@ -325,30 +325,6 @@ const hitTemplate = function(hit) {
   `;
 }
 
-// Adding searchbar and results widgets
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '.search-searchbar',
-    poweredBy: true,
-    placeholder: 'Enter your search term...'
-  })
-);
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '.search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-// Starting the search
-search.start();
-</script>
-
-
-
-
 
 
   </body>
